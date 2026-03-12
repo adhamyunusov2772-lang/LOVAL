@@ -7,73 +7,60 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap');
-        body { background-color: #0d0d0d; color: #f0f0f0; font-family: 'Poppins', sans-serif; }
+        body { background-color: #080808; color: #f0f0f0; font-family: 'Poppins', sans-serif; }
         .golden-text { color: #d4af37; font-family: 'Cinzel', serif; }
-        .loyalty-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(212, 175, 55, 0.2); }
-        .hero-image { width: 100%; height: auto; border-radius: 24px; box-shadow: 0 0 50px rgba(212, 175, 55, 0.15); }
-        .btn-hover:hover { transform: scale(1.05); text-shadow: 0 0 10px #d4af37; }
+        .loyalty-card { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(15px); border: 1px solid rgba(212, 175, 55, 0.1); }
+        .hero-image { width: 100%; height: auto; border-radius: 24px; box-shadow: 0 0 40px rgba(212, 175, 55, 0.1); }
+        .glow-border { border: 1px solid rgba(212, 175, 55, 0.3); box-shadow: 0 0 15px rgba(212, 175, 55, 0.1); }
     </style>
 </head>
 <body>
 
     <header class="p-6 max-w-6xl mx-auto flex justify-between items-center">
-        <h1 class="text-3xl font-bold golden-text">$LOYAL</h1>
-        <div class="space-x-6 text-sm uppercase tracking-widest font-semibold">
-            <a href="https://x.com/ZigoZiya" target="_blank" class="hover:text-[#d4af37] transition btn-hover">Twitter</a>
-            <a href="https://t.me/project_bit" target="_blank" class="hover:text-[#d4af37] transition btn-hover">Telegram</a>
+        <h1 class="text-3xl font-bold golden-text italic tracking-tighter">$LOYAL</h1>
+        <div class="flex space-x-4 md:space-x-8 text-xs md:text-sm uppercase tracking-widest font-semibold">
+            <a href="https://x.com/ZigoZiya" target="_blank" class="hover:text-[#d4af37] transition">Twitter</a>
+            <a href="https://t.me/project_bit" target="_blank" class="hover:text-[#d4af37] transition">Telegram</a>
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-6 py-12 text-center">
-        <img src="banner.jpg" alt="True Loyalty" class="hero-image mb-12">
+    <main class="max-w-5xl mx-auto px-6 py-8 text-center">
+        <img src="banner.jpg" alt="True Loyalty" class="hero-image mb-10">
 
-        <h2 class="text-5xl md:text-7xl font-bold golden-text mb-6 italic">TRUE LOYALTY</h2>
+        <h2 class="text-4xl md:text-7xl font-bold golden-text mb-6 italic">TRUE LOYALTY</h2>
         
-        <div class="max-w-3xl mx-auto mb-16">
-            <p class="text-xl md:text-2xl italic leading-relaxed text-gray-300">
-                "Loyalty is not just a word, it’s a lifestyle. In a world full of temporary connections, being $LOYAL is the ultimate strength. It’s the bond that remains unbroken when everything else falls apart. True loyalty is standing together through the ruins, protecting what matters most."
+        <div class="max-w-3xl mx-auto mb-12">
+            <p class="text-lg md:text-xl italic leading-relaxed text-gray-400">
+                "In a market full of betrayal, $LOYAL is the ultimate bond. We stand together through the ruins, protecting our community. Loyalty is our fuel, and the moon is our destination."
             </p>
         </div>
 
-        <div class="my-16">
-            <h3 class="text-2xl golden-text mb-6 uppercase tracking-widest">Live Market Pulse</h3>
-            <div class="relative w-full overflow-hidden rounded-3xl border border-[#d4af37]/30 shadow-2xl" style="padding-top: 56.25%;">
+        <div class="my-12">
+            <h3 class="text-xl golden-text mb-4 uppercase tracking-widest">Live Market Feed</h3>
+            <div class="relative w-full overflow-hidden rounded-2xl glow-border shadow-2xl" style="padding-top: 60%;">
                 <iframe 
                     class="absolute top-0 left-0 w-full h-full"
-                    src="https://dexscreener.com/solana/2Kxh26CDr1n93aP651hj5PquppTLR4xZDhYM8RvswLMS?embed=1&theme=dark&trades=0&info=0" 
+                    src="https://dexscreener.com/solana/5fDD76ARQ9VsqPhuFbZ6VF6VZGYeuaHErzt3SEknpump?embed=1&theme=dark&trades=0&info=0" 
                     frameborder="0" 
                     allowfullscreen>
                 </iframe>
             </div>
+            <p class="text-gray-500 text-[10px] mt-2 uppercase tracking-widest">Real-time data for 5fDD...pump</p>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-4 mb-20">
-            <a href="https://t.me/project_bit" target="_blank" class="bg-[#d4af37] text-black px-8 py-3 rounded-full font-bold hover:bg-yellow-600 transition">JOIN TELEGRAM</a>
-            <a href="https://x.com/ZigoZiya" target="_blank" class="border border-[#d4af37] text-[#d4af37] px-8 py-3 rounded-full font-bold hover:bg-[#d4af37]/10 transition">FOLLOW TWITTER</a>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-16">
+            <a href="https://pump.fun/5fDD76ARQ9VsqPhuFbZ6VF6VZGYeuaHErzt3SEknpump" target="_blank" class="bg-[#d4af37] text-black w-full md:w-auto px-10 py-4 rounded-xl font-black hover:bg-yellow-500 transition shadow-lg">BUY ON PUMP.FUN</a>
+            <a href="https://t.me/project_bit" target="_blank" class="border border-white/20 text-white w-full md:w-auto px-10 py-4 rounded-xl font-bold hover:bg-white/5 transition">JOIN TELEGRAM</a>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-            <div class="loyalty-card p-10 rounded-3xl">
-                <h4 class="golden-text text-4xl font-bold mb-2">100%</h4>
-                <p class="text-gray-500 uppercase text-xs tracking-widest">Community Owned</p>
-            </div>
-            <div class="loyalty-card p-10 rounded-3xl">
-                <h4 class="golden-text text-4xl font-bold mb-2">SAFE</h4>
-                <p class="text-gray-500 uppercase text-xs tracking-widest">LP Burned Forever</p>
-            </div>
-            <div class="loyalty-card p-10 rounded-3xl">
-                <h4 class="golden-text text-4xl font-bold mb-2">0%</h4>
-                <p class="text-gray-500 uppercase text-xs tracking-widest">Transaction Tax</p>
-            </div>
+        <div class="bg-white/5 p-4 rounded-xl border border-white/10 mb-20 inline-block w-full max-w-xl">
+            <p class="text-[10px] text-yellow-500 uppercase font-bold mb-1">Contract Address</p>
+            <code class="text-[11px] md:text-sm text-gray-300 break-all">5fDD76ARQ9VsqPhuFbZ6VF6VZGYeuaHErzt3SEknpump</code>
         </div>
     </main>
 
-    <footer class="pb-10 text-center text-gray-600 text-sm">
-        <p>&copy; 2026 $LOYAL Ecosystem. Stay True. Stay Loyal.</p>
-        <div class="mt-4 flex justify-center space-x-4">
-             <a href="https://t.me/project_bit" class="hover:text-[#d4af37] underline">Telegram</a>
-             <a href="https://x.com/ZigoZiya" class="hover:text-[#d4af37] underline">Twitter</a>
-        </div>
+    <footer class="pb-10 text-center text-gray-600 text-[10px] uppercase tracking-widest">
+        <p>&copy; 2026 $LOYAL Community. Stay True. Stay Loyal.</p>
     </footer>
 
 </body>
